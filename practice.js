@@ -252,10 +252,17 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
   function MakePerson(name, birthday, ssn) {
-    this["name"] = name;
-    this["birthday"] = birthday;
-    this["ssn"] = ssn;
-    return this;
+    // this.name = name;
+    // this.birthday = birthday;
+    // this.ssn = ssn;
+    // return this;
+    // above code doesn't work with spec runner. lame.
+
+    return {
+      name : name, 
+      birthday : birthday, 
+      ssn : ssn
+    };
   }
 
 
